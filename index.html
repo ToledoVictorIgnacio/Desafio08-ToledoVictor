@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Realiza tu pedido de comida</h1>
+
+        <form id="formularioPedido">
+            <h2>Datos del usuario</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="direccion">Dirección de entrega:</label>
+            <input type="text" id="direccion" required>
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="text" id="telefono" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+
+            <h2>Menú</h2>
+            <div class="menu">
+                <label><input type="checkbox" class="item" value="Hamburguesa"> Hamburguesa - $8.50</label>
+                <label><input type="checkbox" class="item" value="Pizza"> Pizza - $12.00</label>
+                <label><input type="checkbox" class="item" value="Pollo Frito"> Pollo Frito - $6.50</label>
+                <label><input type="checkbox" class="item" value="Empanada"> Empanada - $5.00</label>
+            </div>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+
+        <div id="confirmacion" class="confirmacion">
+            <h2>Confirmación del Pedido</h2>
+            <p id="pedidoDetalles"></p>
+            <p id="precioTotal"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
